@@ -366,13 +366,6 @@
   "type": "object",
   "required": [
     "global",
-    "customAnnotations",
-    "podAnnotations",
-    "customLabels",
-    "podLabels",
-    "nodeSelector",
-    "affinity",
-    "tolerations",
     "installCRDs",
     "namespace",
     "prometheus",

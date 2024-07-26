@@ -5,24 +5,52 @@ global:
     # global.image.pullSecrets -- Optional set of global image pull secrets
     pullSecrets: []
 
+# @schema
+# required: false
+# type: object
+# @schema
 # customAnnotations -- Custom Annotations to be applied on all resources
 customAnnotations: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # podAnnotations -- Custom Annotations to be applied on all pods
 podAnnotations: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # customLabels -- Custom Label to be applied on all resources
 customLabels: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # podLabels -- Custom Label to be applied on all pods
 podLabels: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # nodeSelector -- Node Selector to be applied on all containers
 nodeSelector: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # affinity -- Affinity to be applied on all containers
 affinity: {}
 
+# @schema
+# required: false
+# type: object
+# @schema
 # tolerations -- Tolerations to be applied on all containers
 tolerations: {}
 
