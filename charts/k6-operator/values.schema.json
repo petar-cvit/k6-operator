@@ -82,11 +82,7 @@
       "type": "object",
       "required": [
         "enabled",
-        "image",
-        "resources",
-        "livenessProbe",
-        "readinessProbe",
-        "containerSecurityContext"
+        "image"
       ]
     },
     "customAnnotations": {
@@ -123,7 +119,6 @@
           "title": "image",
           "type": "object",
           "required": [
-            "registry",
             "pullSecrets"
           ]
         }
@@ -298,11 +293,7 @@
         "replicas",
         "serviceAccount",
         "image",
-        "livenessProbe",
-        "readinessProbe",
-        "env",
-        "resources",
-        "containerSecurityContext"
+        "resources"
       ]
     },
     "namespace": {

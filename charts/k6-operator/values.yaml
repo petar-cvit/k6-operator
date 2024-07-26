@@ -1,7 +1,12 @@
 global:
   image:
+    # @schema
+    # required: false
+    # type: string
+    # @schema
     # global.image.registry -- Global image registry to use if it needs to be overridden for some specific use cases (e.g local registries, custom images, ...)
     registry: ""
+
     # global.image.pullSecrets -- Optional set of global image pull secrets
     pullSecrets: []
 
@@ -77,12 +82,32 @@ authProxy:
     tag: v0.15.0
     # authProxy.image.pullPolicy -- pull policy for the image can be Always, Never, IfNotPresent (default: IfNotPresent)
     pullPolicy: IfNotPresent
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # authProxy.resources -- rbac-proxy resource limitation/request
   resources: {}
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # authProxy.livenessProbe -- Liveness probe in Probe format
   livenessProbe: {}
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # authProxy.readinessProbe -- Readiness probe in Probe format
   readinessProbe: {}
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # authProxy.containerSecurityContext -- A security context defines privileges and access control settings for the container.
   containerSecurityContext: {}
 
@@ -103,10 +128,25 @@ manager:
     tag: controller-v0.0.15
     # manager.image.pullPolicy -- pull policy for the image possible values Always, Never, IfNotPresent (default: IfNotPresent)
     pullPolicy: IfNotPresent
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # manager.livenessProbe -- Liveness probe in Probe format
   livenessProbe: {}
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # manager.readinessProbe -- Readiness probe in Probe format
   readinessProbe: {}
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # manager.env -- Environment variables to be applied on the controller
   env: {}
   # manager.resources -- controller-manager Resources definition
@@ -121,5 +161,10 @@ manager:
       cpu: 100m
       # manager.resources.requests.memory -- controller-manager Memory request (Min)
       memory: 50Mi
+
+  # @schema
+  # required: false
+  # type: object
+  # @schema
   # manager.containerSecurityContext -- A security context defines privileges and access control settings for the container.
   containerSecurityContext: {}
