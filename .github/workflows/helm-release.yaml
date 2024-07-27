@@ -30,7 +30,7 @@ jobs:
         run: |
           git add charts/k6-operator/values.schema.json
           git commit -m "gen schema json"
-          git push HEAD:helm-schema
+          git push helm-schema
 
   test-after:
     runs-on: ubuntu-latest
