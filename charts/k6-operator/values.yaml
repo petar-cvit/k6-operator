@@ -21,7 +21,7 @@ customAnnotations: {}
 # required: false
 # type: object
 # @schema
-# podAnnotations -- Custom Annotations to be applied on all pods a
+# podAnnotations -- Custom Annotations to be applied on all pods
 podAnnotations: {}
 
 # @schema
