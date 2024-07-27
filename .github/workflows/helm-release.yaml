@@ -30,15 +30,4 @@ jobs:
         run: |
           git add charts/k6-operator/values.schema.json
           git commit -m "gen schema json"
-          git push helm-schema
-
-  test-after:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Make changes to the file
-        run: |
-          ls
+          git push origin helm-schema
