@@ -320,7 +320,7 @@
     },
     "podAnnotations": {
       "additionalProperties": false,
-      "description": "podAnnotations -- Custom Annotations to be applied on all pods",
+      "description": "podAnnotations -- Custom Annotations to be applied on all pods a",
       "title": "podAnnotations",
       "type": "object"
     },
