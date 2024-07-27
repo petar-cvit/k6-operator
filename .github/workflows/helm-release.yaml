@@ -4,8 +4,6 @@ name: Helm release
 on:
   workflow_dispatch: {}
   push:
-    branches:
-      - *
     paths:
       - 'charts/k6-operator/Chart.yaml'
 
